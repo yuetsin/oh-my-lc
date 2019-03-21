@@ -1,2 +1,2 @@
-# lc-draft
+# oh-my-lc
 Some simple code pieces.
