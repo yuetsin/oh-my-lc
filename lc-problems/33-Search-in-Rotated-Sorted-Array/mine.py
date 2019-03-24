@@ -13,6 +13,7 @@ class Solution:
             if numlen == 1:
                 return 0 if nums[0] == target else -1
             elif numlen == 2:
+                try:
                     return nums.index(target)
                 except ValueError:
                     return -1
