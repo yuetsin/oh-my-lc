@@ -1,7 +1,7 @@
 class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
         def checkDuplicate(block: List[str]) -> bool:
-            for ch in "0123456789":
+            for ch in "123456789":
                 if block.count(ch) > 1:
                     return False
             return True
