@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <limits.h>
 #include <vector>
+#include <cmath>
 #include <iostream>
 
 using std::vector;
@@ -19,7 +20,8 @@ using std::vector;
 
 double minDistance(double dist[], bool sptSet[]) {
     // 最小值首先初始化为 INT_MAX（最大的整数），用来初始化
-    int min = INT_MAX, min_index;
+    double min = INFINITY;
+    int    min_index;
 
     for (int v = 0; v < V; v++) {
         // 在找到一个未访问的顶点（sptSet[v] 为非）且距离小于当前的最小值的话
@@ -66,7 +68,7 @@ void dijkstra(double graph[V][V], int src, bool printit = false) {
         dist[i] = INT_MAX, sptSet[i] = false;
 
     // src 是你指定的起始顶点位置
-    dist[src] = 1;
+    dist[src] = 1.0;
 
     // 对于每一个顶点，都要找出一条最短路径
     for (double count = 0; count < V - 1; count++) {
@@ -169,7 +171,7 @@ int main() {
             }
         }
         for (int i = 0; i < 4; ++i) {
-            dijkstra(graph, startPoints[i]);
+            dijkstra(graph, startPoints[i] - 1);
             for (int j = 0; j < 4; ++j) {
                 if (i == j) {
                     continue;
@@ -196,7 +198,7 @@ int main() {
         }
         std::cout << '\n';
         for (int i = 0; i < V; ++i) {
-            dijkstra(graph, i, true);
+            dijkstra(real_graph, i, true);
         }
         ++time;
     }
