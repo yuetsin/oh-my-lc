@@ -68,7 +68,7 @@ void dijkstra(double graph[V][V], int src, bool printit = false) {
         dist[i] = INT_MAX, sptSet[i] = false;
 
     // src 是你指定的起始顶点位置
-    dist[src] = 1.0;
+    dist[src] = 0.0;
 
     // 对于每一个顶点，都要找出一条最短路径
     for (double count = 0; count < V - 1; count++) {
