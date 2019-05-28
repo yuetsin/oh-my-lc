@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 """
 # Definition for a Node.
 class Node:
@@ -10,61 +12,38 @@ class Node:
 
 
 class Solution:
-
-    special_value = 21748594028
-
-    def root_connect(self, root: 'Node') -> 'Node':
+    def connect(self, root: 'Node') -> 'Node':
         if root == None:
             return
 
         pre = root
 
-        while pre.left:
+        while True:
             cur = pre
+            this_layer = []
             while cur:
-                cur.left.next = cur.right
-                if cur.next:
-                    cur.right.next = cur.next.left
+                if cur.left != None:
+                    this_layer.append(cur.left)
+                if cur.right != None:
+                    this_layer.append(cur.right)
                 cur = cur.next
-            pre = pre.left
 
-        return root
-
-    def fix_next(self, root: 'Node'):
-        if root == None:
-            return
-        next_rec = root.left
-        node = root
-
-        while node:
-            next_node = node.next
-            if next_node == None:
+            if len(this_layer) == 0:
                 break
-            while next_node.val != self.special_value:
-                next_node = next_node.next
-                if next_node == None:
-                    node.next = None
+
+            for i in range(len(this_layer) - 1):
+                this_layer[i].next = this_layer[i + 1]
+
+            expect = pre
+            while True:
+                expect = pre.left
+                if expect == None:
+                    expect = pre.right
+                    if expect == None:
+                        pre = pre.next
+                    else:
+                        break
+                else:
                     break
-
-            node.next = next_node
-            node = node.next
-        self.fix_next(next_rec)
-
-    def connect(self, root: 'Node') -> 'Node':
-        def initEmpty(root: 'Node'):
-            if root.left == None and root.right == None:
-                return
-
-            if root.left == None:
-                root.left = Node(self.special_value, None, None, None)
-            if root.right == None:
-                root.right = Node(self.special_value, None, None, None)
-
-            initEmpty(root.left)
-            initEmpty(root.right)
-
-        initEmpty(root)
-        self.root_connect(root)
-        self.fix_next(root)
-
+            pre = expect
         return root
