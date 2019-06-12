@@ -12,4 +12,6 @@ Some simple code pieces.
 
 ![#156](https://img.shields.io/badge/156%20Binary%20Tree%20Upside%20Down-Medium-yellow.svg?style=flat-square)
 
-![%157](https://img.shields.io/badge/157%20Read%20N%20Characters%20Given%20Read4-Easy-green.svg?style=flat-square)
+![#157](https://img.shields.io/badge/157%20Read%20N%20Characters%20Given%20Read4-Easy-green.svg?style=flat-square)
+
+![#158](https://img.shields.io/badge/158%20Read%20N%20Characters%20Given%20Read4%20II%20--%20Call%20multiple%20times-Hard-red.svg?style=flat-square)
