@@ -10,7 +10,7 @@ Some simple code pieces.
 
 ## Locked Problems
 
-![#156](https://img.shields.io/badge/156%20Binary%20Tree%20Upside%20Down-Medium-yellow.svg?style=flat-square)
+![#156](https://img.shields.io/badge/156-Medium-yellow.svg?style=flat-square) · Binary Tree Upside Down
 
 ![#157](https://img.shields.io/badge/157%20Read%20N%20Characters%20Given%20Read4-Easy-green.svg?style=flat-square)
 
