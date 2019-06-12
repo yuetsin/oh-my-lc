@@ -10,10 +10,10 @@ Some simple code pieces.
 
 ## Locked Problems
 
-![#156](https://img.shields.io/badge/156-Medium-yellow.svg?style=flat-square)·Binary Tree Upside Down
+![#156](https://img.shields.io/badge/156-Medium-yellow.svg?style=flat-square) `Binary Tree Upside Down`
 
-![#157](https://img.shields.io/badge/157-Easy-green.svg?style=flat-square)·Read N Characters Given Read4
+![#157](https://img.shields.io/badge/157-Easy-green.svg?style=flat-square) `Read N Characters Given Read4`
 
-![#158](https://img.shields.io/badge/158-Hard-red.svg?style=flat-square)·Read N Characters Given Read4 II - Call multiple times
+![#158](https://img.shields.io/badge/158-Hard-red.svg?style=flat-square) `Read N Characters Given Read4 II - Call multiple times`
 
-![#159](https://img.shields.io/badge/159-Hard-red.svg?style=flat-square)·Longest Substring with At Most Two Distinct Characters
+![#159](https://img.shields.io/badge/159-Hard-red.svg?style=flat-square) `Longest Substring with At Most Two Distinct Characters`
