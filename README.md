@@ -17,3 +17,7 @@ Some simple code pieces.
 ![#158](https://img.shields.io/badge/158-Hard-red.svg?style=flat-square) `Read N Characters Given Read4 II - Call multiple times`
 
 ![#159](https://img.shields.io/badge/159-Hard-red.svg?style=flat-square) `Longest Substring with At Most Two Distinct Characters`
+
+![#161](https://img.shields.io/badge/161-Medium-yellow.svg?style=flat-square) `One Edit Distance`
+
+![#163](https://img.shields.io/badge/163-Medium-yellow.svg?style=flat-square) `Missing Ranges`
