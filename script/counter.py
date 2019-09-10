@@ -46,7 +46,7 @@ git commit -am "[bot] auto-record progress (%d/%d)"
 
 git config remote.origin.url https://%s:%s@github.com/%s/oh-my-lc.git
 
-git push
+git push origin HEAD:master
 
 echo "Running Bash Script Over"
 """ % (folder_counts, LEETCODE_PROBLEMS_COUNT, username, password, username)
