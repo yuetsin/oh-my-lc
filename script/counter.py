@@ -40,17 +40,19 @@ new_file.write(w_str)
 
 bash_script = """
 
-rm -f push.sh
+echo "Running Bash Script"
 
 git commit -am "[bot] auto-record progress (%d/%d)"
 
 git config remote.origin.url https://%s:%s@github.com/%s/oh-my-lc.git
 
 git push
+
+echo "Running Bash Script Over"
 """ % (folder_counts, LEETCODE_PROBLEMS_COUNT, username, password, username)
 
-bash_file = open("push.sh", 'w')
+with open("push.sh", 'w') as bash_file:
 
-bash_file.write(bash_script)
+    bash_file.write(bash_script)
 
 rc = subprocess.call("chmod +x ./push.sh; ./push.sh", shell=True)
