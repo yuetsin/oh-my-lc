@@ -2,7 +2,8 @@
 
 ## Progress Diagrams
 
-![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-163%2F1187%20Completed-F89F1B?style=flat-square&logo=LeetCode)
+![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-164%2F1187%20Completed-F89F1B?style=flat-square&logo=LeetCode)
+![Travis (.org)](https://img.shields.io/travis/yuetsin/oh-my-lc?color=3EAAAF&label=travis%20ci&logo=Travis%20CI&style=flat-square)
 
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/yuetsin/oh-my-lc.svg?style=flat-square)
 ![GitHub language count](https://img.shields.io/github/languages/count/yuetsin/oh-my-lc.svg?style=flat-square)
@@ -25,3 +26,6 @@ Some simple code pieces.
 ![#161](https://img.shields.io/badge/161-Medium-yellow.svg?style=flat-square) `One Edit Distance`
 
 ![#163](https://img.shields.io/badge/163-Medium-yellow.svg?style=flat-square) `Missing Ranges`
+
+![#170](https://img.shields.io/badge/170-Easy-green.svg?style=flat-square) `Two Sum III - Data structure design`
+
