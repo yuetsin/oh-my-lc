@@ -34,9 +34,9 @@ for line in old_file:
     if line == "## Progress Diagrams\n":
         w_str += badge_str
 
-new_file = open("README.md", 'w')
-
-new_file.write(w_str)
+with open("README.md", 'w') as new_file:
+    new_file.write(w_str)
+    print("Written new README.md: ")
 
 bash_script = """
 
@@ -44,7 +44,9 @@ echo "Running Bash Script"
 
 git add .
 
-git commit -am "[bot] auto-record progress (%d/%d)"
+git config --global user.name "LeetCode Bot"
+
+git commit -am "[bot] completed progress (%d/%d)"
 
 git config remote.origin.url https://%s:%s@github.com/%s/oh-my-lc.git
 
