@@ -42,6 +42,8 @@ bash_script = """
 
 echo "Running Bash Script"
 
+git add .
+
 git commit -am "[bot] auto-record progress (%d/%d)"
 
 git config remote.origin.url https://%s:%s@github.com/%s/oh-my-lc.git
