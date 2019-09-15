@@ -2,7 +2,7 @@
 
 ## Progress Diagrams
 
-![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-177%2F1188%20Completed-F89F1B?style=flat-square&logo=LeetCode)
+![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-188%2F1188%20Completed-F89F1B?style=flat-square&logo=LeetCode)
 ![Build Status](https://github.com/yuetsin/oh-my-lc/workflows/build/badge.svg)
 ![Travis (.org)](https://img.shields.io/travis/yuetsin/oh-my-lc?color=3EAAAF&label=travis%20ci&logo=Travis%20CI&style=flat-square)
 
@@ -30,3 +30,4 @@ Some simple code pieces.
 
 ![#170](https://img.shields.io/badge/170-Easy-green.svg?style=flat-square) `Two Sum III - Data structure design`
 
+![#186](https://img.shields.io/badge/186-Medium-yellow.svg?style=flat-square) `Reverse Words in a String II`
