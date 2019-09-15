@@ -1,0 +1,1 @@
+return Integer.bitCount(n);
