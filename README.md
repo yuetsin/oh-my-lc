@@ -2,7 +2,7 @@
 
 ## Progress Diagrams
 
-![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-234%2F1203%20Completed-F89F1B?style=flat-square&logo=LeetCode)
+![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-244%2F1203%20Completed-F89F1B?style=flat-square&logo=LeetCode)
 ![Build Status](https://github.com/yuetsin/oh-my-lc/workflows/build/badge.svg)
 ![Travis (.org)](https://img.shields.io/travis/yuetsin/oh-my-lc?color=3EAAAF&label=travis%20ci&logo=Travis%20CI&style=flat-square)
 
@@ -59,3 +59,24 @@ Some simple code pieces.
 ![#255](https://img.shields.io/badge/255-Medium-yellow.svg?style=flat-square) `Verify Preorder Sequence in Binary Search Tree`
 
 ![#256](https://img.shields.io/badge/256-Easy-green.svg?style=flat-square) `Paint House`
+
+![#259](https://img.shields.io/badge/259-Medium-yellow.svg?style=flat-square) `3Sum Smaller`
+
+![#261](https://img.shields.io/badge/261-Medium-yellow.svg?style=flat-square) `Graph Valid Tree`
+
+![#265](https://img.shields.io/badge/265-Hard-red.svg?style=flat-square) `Paint House II`
+
+![#266](https://img.shields.io/badge/266-Easy-green.svg?style=flat-square) `Palindrome Permutation`
+
+![#267](https://img.shields.io/badge/267-Medium-yellow.svg?style=flat-square) `Palindrome Permutation II`
+
+![#269](https://img.shields.io/badge/269-Hard-red.svg?style=flat-square) `Alien Dictionary`
+
+![#270](https://img.shields.io/badge/270-Easy-green.svg?style=flat-square) `Closest Binary Search Tree Value`
+
+![#271](https://img.shields.io/badge/271-Medium-yellow.svg?style=flat-square) `Encode and Decode Strings`
+
+![#272](https://img.shields.io/badge/272-Hard-red.svg?style=flat-square) `Closest Binary Search Tree Value II`
+
+
+
