@@ -2,7 +2,7 @@
 
 ## Progress Diagrams
 
-![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-244%2F1203%20Completed-F89F1B?style=flat-square&logo=LeetCode)
+![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-246%2F1203%20Completed-F89F1B?style=flat-square&logo=LeetCode)
 ![Build Status](https://github.com/yuetsin/oh-my-lc/workflows/build/badge.svg)
 ![Travis (.org)](https://img.shields.io/travis/yuetsin/oh-my-lc?color=3EAAAF&label=travis%20ci&logo=Travis%20CI&style=flat-square)
 
@@ -78,5 +78,26 @@ Some simple code pieces.
 
 ![#272](https://img.shields.io/badge/272-Hard-red.svg?style=flat-square) `Closest Binary Search Tree Value II`
 
+![#276](https://img.shields.io/badge/276-Easy-green.svg?style=flat-square) `Paint Fence`
 
+![#277](https://img.shields.io/badge/277-Medium-yellow.svg?style=flat-square) `Find the Celebrity`
 
+![#280](https://img.shields.io/badge/280-Medium-yellow.svg?style=flat-square) `Wiggle Sort`
+
+![#281](https://img.shields.io/badge/281-Medium-yellow.svg?style=flat-square) `Zigzag Iterator`
+
+![#285](https://img.shields.io/badge/285-Medium-yellow.svg?style=flat-square) `Inorder Successor in BST`
+
+![#286](https://img.shields.io/badge/286-Medium-yellow.svg?style=flat-square) `Walls and Gates`
+
+![#288](https://img.shields.io/badge/288-Medium-yellow.svg?style=flat-square) `Unique Word Abbreviation`
+
+![#291](https://img.shields.io/badge/291-Hard-red.svg?style=flat-square) `Word Pattern II`
+
+![#293](https://img.shields.io/badge/293-Easy-green.svg?style=flat-square) `Flip Game`
+
+![#294](https://img.shields.io/badge/294-Medium-yellow.svg?style=flat-square) `Flip Game II`
+
+![#296](https://img.shields.io/badge/296-Hard-red.svg?style=flat-square) `Best Meeting Point`
+
+![#298](https://img.shields.io/badge/298-Medium-yellow.svg?style=flat-square) `Binary Tree Longest Consecutive Sequence`
