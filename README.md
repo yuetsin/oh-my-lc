@@ -2,7 +2,7 @@
 
 ## Progress Diagrams
 
-![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-262%2F1220%20Completed-F89F1B?style=flat-square&logo=LeetCode)
+![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-264%2F1220%20Completed-F89F1B?style=flat-square&logo=LeetCode)
 ![Build Status](https://github.com/yuetsin/oh-my-lc/workflows/build/badge.svg)
 ![Travis (.org)](https://img.shields.io/travis/yuetsin/oh-my-lc?color=3EAAAF&label=travis%20ci&logo=Travis%20CI&style=flat-square)
 
@@ -107,3 +107,5 @@ Some simple code pieces.
 ![#305](https://img.shields.io/badge/305-Hard-red.svg?style=flat-square) `Number of Islands II`
 
 ![#308](https://img.shields.io/badge/308-Hard-red.svg?style=flat-square) `Range Sum Query 2D - Mutable`
+
+![#311](https://img.shields.io/badge/311-Medium-yellow.svg?style=flat-square) `Sparse Matrix Multiplication`
