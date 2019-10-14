@@ -1,0 +1,17 @@
+I didn't see a full description of this solution that didn't leave me with follow-up questions so I decided to write one that I hope is satisfing to a broader audience.
+
+-Each bulb is toggled for each number lower than it that divides it evenly
+-That is a bulb will be on if it has an even number of unique divisors
+-This happens only when a number is a perfect square since all divisors can be grouped in pairs (d, n/d)
+-The pair has two unique values except for the case of d = n/d i.e d*d = n or n is a perfect square
+
+    //so we count the perect squares <= n
+    if (n < 1) return 0;
+    
+    int cnt = 2;
+    while (cnt*cnt <= n) cnt++;
+    
+    return cnt-1;
+    
+    //equivalently floor(sqrt(n)) will give the number of perfect squares less <= n
+    //since for all numbers <= this value we have num*num <= n
