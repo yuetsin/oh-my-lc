@@ -2,7 +2,7 @@
 
 ## Progress Diagrams
 
-![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-268%2F1220%20Completed-F89F1B?style=flat-square&logo=LeetCode)
+![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-276%2F1220%20Completed-F89F1B?style=flat-square&logo=LeetCode)
 ![Build Status](https://github.com/yuetsin/oh-my-lc/workflows/build/badge.svg)
 ![Travis (.org)](https://img.shields.io/travis/yuetsin/oh-my-lc?color=3EAAAF&label=travis%20ci&logo=Travis%20CI&style=flat-square)
 
@@ -120,6 +120,6 @@ Some simple code pieces.
 
 ![#325](https://img.shields.io/badge/325-Medium-yellow.svg?style=flat-square) `Maximum Size Subarray Sum Equals k`
 
-![#311](https://img.shields.io/badge/311-Medium-yellow.svg?style=flat-square) `Sparse Matrix Multiplication`
+![#333](https://img.shields.io/badge/333-Medium-yellow.svg?style=flat-square) `Largest BST Subtree`
 
 
