@@ -1,0 +1,44 @@
+%-*- coding: UTF-8 -*-
+
+\documentclass[UTF8]{ctexart}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{CJKpunct}
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{a6paper,centering,scale=0.8}
+\usepackage[format=hang,font=small,textfont=it]{caption}
+\usepackage[nottoc]{tocbibind}
+\setromanfont{STSongti-SC-Regular} %设置中文字体
+\punctstyle{quanjiao} %使用全角标点	
+
+
+\title{Problem 343}
+\author{Integer Break}
+
+
+\begin{document}
+
+把一个 2 ～ 58 之间的整数拆成若干个正整数的和，让他们的乘积最大。
+
+首先限定 58 也是为了照顾某些 Int 限高的语言…因为 $integerBreak(59)$ 就超过了 $2147483647$ 了。
+
+然后因为输入过小…可以直接打表了。
+
+Runtime: 24 ms, faster than 100.00\% of Python3 online submissions for Integer Break.
+
+Memory Usage: 13.8 MB, less than 11.11\% of Python3 online submissions for Integer Break.
+
+事实上，有人类的解决方案：
+
+首先，因为加和乘操作都是可交换的。也就是说我们的 IntegerSplit 和结果都是可分拆的。
+
+因此我们只需要把一个整数拆成两部分（如果可以？），然后递归调用自己拿到两个孩子的最大乘积，再把他们乘起来就好了！Perfect！
+
+不过这样会多次重复调用，因此我们最好还是使用 DP 法来解决。
+
+以上。
+
+我爱 DP，没人爱我。
+
+\end{document}
