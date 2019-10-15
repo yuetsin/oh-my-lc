@@ -1,0 +1,36 @@
+%-*- coding: UTF-8 -*-
+
+\documentclass[UTF8]{ctexart}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{CJKpunct}
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{a6paper,centering,scale=0.8}
+\usepackage[format=hang,font=small,textfont=it]{caption}
+\usepackage[nottoc]{tocbibind}
+\setromanfont{STSongti-SC-Regular} %设置中文字体
+\punctstyle{quanjiao} %使用全角标点	
+
+
+\title{Problem 342}
+\author{Power of Four}
+
+
+\begin{document}
+
+我怀疑你在水题目.jpg
+
+Runtime: 32 ms, faster than 95.42\% of Python3 online submissions for Power of Four.
+
+Memory Usage: 13.8 MB, less than 8.70\% of Python3 online submissions for Power of Four.
+
+要是下次我再看到 Power of Five。我就不做了。
+
+另一个略好的方案：
+
+      return num & (num - 1) == 0 and (list(str(bin(num))).count('0') - 1) \% 2 == 0
+      
+计算二进制表示当中 0 的个数是否是单数，而且 num 和 num - 1 的按位与是否是 0。
+
+\end{document}
