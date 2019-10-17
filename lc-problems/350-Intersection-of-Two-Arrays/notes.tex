@@ -1,0 +1,31 @@
+%-*- coding: UTF-8 -*-
+
+\documentclass[UTF8]{ctexart}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{CJKpunct}
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{a4paper,centering,scale=0.8}
+\usepackage[format=hang,font=small,textfont=it]{caption}
+\usepackage[nottoc]{tocbibind}
+\setromanfont{STSongti-SC-Regular} %设置中文字体
+\punctstyle{quanjiao} %使用全角标点	
+
+
+\title{Problem 350}
+\author{Intersection of Two Arrays}
+
+
+\begin{document}
+\maketitle
+
+Runtime: 120 ms, faster than 5.51\% of Python3 online submissions for Intersection of Two Arrays II.
+
+Memory Usage: 13.8 MB, less than 5.72\% of Python3 online submissions for Intersection of Two Arrays II.
+
+不敢相信！我的 Solution 怎么这么慢？？！
+
+事实上可以直接用 m+=[t[i]]*counts[i]. I'm an idiot.
+
+\end{document}
