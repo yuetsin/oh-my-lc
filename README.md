@@ -2,7 +2,7 @@
 
 ## Progress Diagrams
 
-![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-294%2F1236%20Completed-F89F1B?style=flat-square&logo=LeetCode)
+![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-299%2F1236%20Completed-F89F1B?style=flat-square&logo=LeetCode)
 ![Build Status](https://github.com/yuetsin/oh-my-lc/workflows/build/badge.svg)
 ![Travis (.org)](https://img.shields.io/travis/yuetsin/oh-my-lc?color=3EAAAF&label=travis%20ci&logo=Travis%20CI&style=flat-square)
 
@@ -129,3 +129,31 @@ Some simple code pieces.
 ![#346](https://img.shields.io/badge/346-Easy-green.svg?style=flat-square) `Moving Average from Data Stream`
 
 ![#348](https://img.shields.io/badge/348-Medium-yellow.svg?style=flat-square) `Design Tic-Tac-Toe`
+
+![#351](https://img.shields.io/badge/351-Medium-yellow.svg?style=flat-square) `Android Unlock Patterns`
+
+![#353](https://img.shields.io/badge/353-Medium-yellow.svg?style=flat-square) `Design Snake Game`
+
+![#356](https://img.shields.io/badge/356-Medium-yellow.svg?style=flat-square) `Line Reflection`
+
+![#358](https://img.shields.io/badge/358-Hard-red.svg?style=flat-square) `Rearrange String k Distance Apart`
+
+![#359](https://img.shields.io/badge/359-Easy-green.svg?style=flat-square) `Logger Rate Limiter`
+
+![#360](https://img.shields.io/badge/360-Medium-yellow.svg?style=flat-square) `Sort Transformed Array`
+
+![#361](https://img.shields.io/badge/361-Medium-yellow.svg?style=flat-square) `Bomb Enemy`
+
+![#362](https://img.shields.io/badge/362-Medium-yellow.svg?style=flat-square) `Design Hit Counter`
+
+![#364](https://img.shields.io/badge/364-Medium-yellow.svg?style=flat-square) `Nested List Weight Sum II`
+
+![#366](https://img.shields.io/badge/353-Medium-yellow.svg?style=flat-square) `Find Leaves of Binary Tree`
+
+![#369](https://img.shields.io/badge/369-Medium-yellow.svg?style=flat-square) `Plus One Linked List`
+
+![#370](https://img.shields.io/badge/370-Medium-yellow.svg?style=flat-square) `Range Addition`
+
+
+
+
