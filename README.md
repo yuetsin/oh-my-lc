@@ -2,7 +2,7 @@
 
 ## Progress Diagrams
 
-![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-284%2F1224%20Completed-F89F1B?style=flat-square&logo=LeetCode)
+![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-294%2F1236%20Completed-F89F1B?style=flat-square&logo=LeetCode)
 ![Build Status](https://github.com/yuetsin/oh-my-lc/workflows/build/badge.svg)
 ![Travis (.org)](https://img.shields.io/travis/yuetsin/oh-my-lc?color=3EAAAF&label=travis%20ci&logo=Travis%20CI&style=flat-square)
 
@@ -122,4 +122,10 @@ Some simple code pieces.
 
 ![#333](https://img.shields.io/badge/333-Medium-yellow.svg?style=flat-square) `Largest BST Subtree`
 
+![#339](https://img.shields.io/badge/339-Easy-green.svg?style=flat-square) `Nested List Weight Sum`
 
+![#340](https://img.shields.io/badge/340-Hard-red.svg?style=flat-square) `Longest Substring with At Most K Distinct Characters`
+
+![#346](https://img.shields.io/badge/346-Easy-green.svg?style=flat-square) `Moving Average from Data Stream`
+
+![#348](https://img.shields.io/badge/348-Medium-yellow.svg?style=flat-square) `Design Tic-Tac-Toe`
