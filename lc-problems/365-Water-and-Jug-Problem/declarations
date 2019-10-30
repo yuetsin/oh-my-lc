@@ -1,0 +1,10 @@
+No-ati
+
+Last Edit: October 26, 2019 8:22 AM
+29 VIEWS
+
+I see a lot of solutions using gcd, but no one explains why it works. So I do some research and find out that the problem is just like a implementation of a math theory named "Bezout's Lemma". I copy the definition below, and you can find the proof of it on google if you are interested in it.
+
+Bezout's Lemma states that if x and y are nonzero integers and g = gcd(x,y), then there exist integers a and b such that ax+by=g. In other words, there exists a linear combination of x and y equal to g.
+
+Furthermore, g is the smallest positive integer that can be expressed in this form, i.e. g = min{ax+by | a, b in Z, ax+by > 0}.
