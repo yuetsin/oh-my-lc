@@ -154,6 +154,4 @@ Some simple code pieces.
 
 ![#370](https://img.shields.io/badge/370-Medium-yellow.svg?style=flat-square) `Range Addition`
 
-
-
-
+![#379](https://img.shields.io/badge/379-Medium-yellow.svg?style=flat-square) `Design Phone Directory`
