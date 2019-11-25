@@ -1,0 +1,51 @@
+Get it Done, Make it Better, Share the Best -- Talse
+I). Naive
+| O(T): O(lgn) | O(S): O(lgn) | Rt: 24ms |
+
+    def toHex(self, num: int) -> str:
+        if not num: return '0'
+        num &= 0xffffffff
+        rst = []
+        a = '0123456789abcdef'
+        while num:
+            rst.append(a[num % 16])
+            num //= 16
+        rst.reverse()
+        return ''.join(rst)
+II). Bit Manipulation
+| O(T): O(lgn) | O(S): O(1) | Rt: 16ms |
+
+    def toHex(self, num: int) -> str:
+        if not num: return '0'
+        num &= 0xffffffff
+        rst = []
+        a = '0123456789abcdef'
+        while num: 
+            rst.append(a[num & 15])
+            num >>= 4
+        rst.reverse()
+        return ''.join(rst)
+Alternative: | Rt: 28ms |
+
+    def toHex(self, num: int) -> str:
+        if not num: return '0'
+        rst = []
+        a = '0123456789abcdef'
+        for _ in range(8): 
+            rst.append(a[num & 15])
+            num >>= 4
+        rst.reverse()
+        return ''.join(rst).lstrip("0")
+Triple: avoid heading 0s.
+
+    def toHex(self, num: int) -> str:
+        if not num: return '0'
+        rst = []
+        a = '0123456789abcdef'
+        for _ in range(8): 
+            rst.append(a[num & 15])
+            num >>= 4
+            if num == 0: break
+        rst.reverse()
+        return ''.join(rst)
+Referrence: https://leetcode.com/problems/convert-a-number-to-hexadecimal/discuss/89261/easy-10-line-python-solution-with-inline-explanation/155474
