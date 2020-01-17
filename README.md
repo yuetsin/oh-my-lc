@@ -2,7 +2,7 @@
 
 ## Progress Diagrams
 
-![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-338%2F1312%20Completed-F89F1B?style=flat-square&logo=LeetCode)
+![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-346%2F1312%20Completed-F89F1B?style=flat-square&logo=LeetCode)
 ![Build Status](https://github.com/yuetsin/oh-my-lc/workflows/build/badge.svg)
 ![Travis (.org)](https://img.shields.io/travis/yuetsin/oh-my-lc?color=3EAAAF&label=travis%20ci&logo=Travis%20CI&style=flat-square)
 
@@ -155,3 +155,11 @@ Some simple code pieces.
 ![#370](https://img.shields.io/badge/370-Medium-yellow.svg?style=flat-square) `Range Addition`
 
 ![#379](https://img.shields.io/badge/379-Medium-yellow.svg?style=flat-square) `Design Phone Directory`
+
+![#408](https://img.shields.io/badge/408-Easy-green.svg?style=flat-square) `Valid Word Abbreviation`
+
+![#411](https://img.shields.io/badge/411-Hard-red.svg?style=flat-square) `Minimum Unique Word Abbreviation`
+
+![#418](https://img.shields.io/badge/418-Medium-yellow.svg?style=flat-square) `Sentence Screen Fitting`
+
+
