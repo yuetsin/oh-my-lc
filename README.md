@@ -2,7 +2,7 @@
 
 ## Progress Diagrams
 
-![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-350%2F1312%20Completed-F89F1B?style=flat-square&logo=LeetCode)
+![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-360%2F1312%20Completed-F89F1B?style=flat-square&logo=LeetCode)
 ![Build Status](https://github.com/yuetsin/oh-my-lc/workflows/build/badge.svg)
 ![Travis (.org)](https://img.shields.io/travis/yuetsin/oh-my-lc?color=3EAAAF&label=travis%20ci&logo=Travis%20CI&style=flat-square)
 
@@ -164,4 +164,11 @@ Some simple code pieces.
 
 ![#422](https://img.shields.io/badge/422-Easy-green.svg?style=flat-square) `Valid Word Square`
 
+![#425](https://img.shields.io/badge/425-Hard-red.svg?style=flat-square) `Word Squares`
+
+![#426](https://img.shields.io/badge/426-Medium-yellow.svg?style=flat-square) `Convert Binary Search Tree to Sorted Doubly Linked List`
+
+![#428](https://img.shields.io/badge/428-Hard-red.svg?style=flat-square) `Serialize and Deserialize N-ary Tree`
+
+![#431](https://img.shields.io/badge/431-Hard-red.svg?style=flat-square) `Encode N-ary Tree to Binary Tree`
 
