@@ -2,7 +2,7 @@
 
 ## Progress Diagrams
 
-![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-360%2F1312%20Completed-F89F1B?style=flat-square&logo=LeetCode)
+![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-370%2F1312%20Completed-F89F1B?style=flat-square&logo=LeetCode)
 ![Build Status](https://github.com/yuetsin/oh-my-lc/workflows/build/badge.svg)
 ![Travis (.org)](https://img.shields.io/travis/yuetsin/oh-my-lc?color=3EAAAF&label=travis%20ci&logo=Travis%20CI&style=flat-square)
 
@@ -172,3 +172,6 @@ Some simple code pieces.
 
 ![#431](https://img.shields.io/badge/431-Hard-red.svg?style=flat-square) `Encode N-ary Tree to Binary Tree`
 
+![#439](https://img.shields.io/badge/439-Medium-yellow.svg?style=flat-square) `Ternary Expression Parser`
+
+![#444](https://img.shields.io/badge/444-Medium-yellow.svg?style=flat-square) `Sequence Reconstruction`
