@@ -13,6 +13,9 @@ for _, dirs, _ in os.walk(path):
     for name in dirs:
         if len(name) == 0 or name[0] == '.':
             continue
+        if name.endswith('.rtfd'):
+            continue
+        print(name)
         folder_counts += 1
 
 "%d / %d Completed" % (
