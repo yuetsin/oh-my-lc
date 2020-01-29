@@ -2,7 +2,7 @@
 
 ## Progress Diagrams
 
-![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-400%2F1312%20Completed-F89F1B?style=flat-square&logo=LeetCode)
+![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-405%2F1312%20Completed-F89F1B?style=flat-square&logo=LeetCode)
 ![Build Status](https://github.com/yuetsin/oh-my-lc/workflows/build/badge.svg)
 ![Travis (.org)](https://img.shields.io/travis/yuetsin/oh-my-lc?color=3EAAAF&label=travis%20ci&logo=Travis%20CI&style=flat-square)
 
@@ -181,3 +181,11 @@ Some simple code pieces.
 ![#469](https://img.shields.io/badge/469-Medium-yellow.svg?style=flat-square) `Convex Polygon`
 
 ![#471](https://img.shields.io/badge/471-Hard-red.svg?style=flat-square) `Encode String with Shortest Length`
+
+![#484](https://img.shields.io/badge/484-Medium-yellow.svg?style=flat-square) `Find Permutation`
+
+![#487](https://img.shields.io/badge/487-Medium-yellow.svg?style=flat-square) `Max Consecutive Ones II`
+
+![#489](https://img.shields.io/badge/489-Hard-red.svg?style=flat-square) `Robot Room Cleaner`
+
+![#490](https://img.shields.io/badge/490-Medium-yellow.svg?style=flat-square) `The Maze`
