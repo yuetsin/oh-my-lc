@@ -2,7 +2,7 @@
 
 ## Progress Diagrams
 
-![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-423%2F1312%20Completed-F89F1B?style=flat-square&logo=LeetCode)
+![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-435%2F1312%20Completed-F89F1B?style=flat-square&logo=LeetCode)
 ![Build Status](https://github.com/yuetsin/oh-my-lc/workflows/build/badge.svg)
 ![Travis (.org)](https://img.shields.io/travis/yuetsin/oh-my-lc?color=3EAAAF&label=travis%20ci&logo=Travis%20CI&style=flat-square)
 
@@ -199,3 +199,5 @@ Some simple code pieces.
 ![#511](https://img.shields.io/badge/511-Easy-green.svg?style=flat-square) `Game Play Analysis I`
 
 ![#512](https://img.shields.io/badge/512-Easy-green.svg?style=flat-square) `Game Play Analysis II`
+
+![#527](https://img.shields.io/badge/527-Hard-red.svg?style=flat-square) `Word Abbreviation`
