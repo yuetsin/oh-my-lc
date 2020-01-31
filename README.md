@@ -2,7 +2,7 @@
 
 ## Progress Diagrams
 
-![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-415%2F1312%20Completed-F89F1B?style=flat-square&logo=LeetCode)
+![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-423%2F1312%20Completed-F89F1B?style=flat-square&logo=LeetCode)
 ![Build Status](https://github.com/yuetsin/oh-my-lc/workflows/build/badge.svg)
 ![Travis (.org)](https://img.shields.io/travis/yuetsin/oh-my-lc?color=3EAAAF&label=travis%20ci&logo=Travis%20CI&style=flat-square)
 
@@ -191,3 +191,11 @@ Some simple code pieces.
 ![#490](https://img.shields.io/badge/490-Medium-yellow.svg?style=flat-square) `The Maze`
 
 ![#499](https://img.shields.io/badge/499-Hard-red.svg?style=flat-square) `The Maze III`
+
+![#505](https://img.shields.io/badge/505-Medium-yellow.svg?style=flat-square) `The Maze II`
+
+![#510](https://img.shields.io/badge/510-Medium-yellow.svg?style=flat-square) `Inorder Successor in BST II`
+
+![#511](https://img.shields.io/badge/511-Easy-green.svg?style=flat-square) `Game Play Analysis I`
+
+![#512](https://img.shields.io/badge/512-Easy-green.svg?style=flat-square) `Game Play Analysis II`
