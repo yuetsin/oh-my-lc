@@ -2,7 +2,7 @@
 
 ## Progress Diagrams
 
-![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-435%2F1312%20Completed-F89F1B?style=flat-square&logo=LeetCode)
+![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-445%2F1312%20Completed-F89F1B?style=flat-square&logo=LeetCode)
 ![Build Status](https://github.com/yuetsin/oh-my-lc/workflows/build/badge.svg)
 ![Travis (.org)](https://img.shields.io/travis/yuetsin/oh-my-lc?color=3EAAAF&label=travis%20ci&logo=Travis%20CI&style=flat-square)
 
@@ -201,3 +201,12 @@ Some simple code pieces.
 ![#512](https://img.shields.io/badge/512-Easy-green.svg?style=flat-square) `Game Play Analysis II`
 
 ![#527](https://img.shields.io/badge/527-Hard-red.svg?style=flat-square) `Word Abbreviation`
+
+![#531](https://img.shields.io/badge/531-Medium-yellow.svg?style=flat-square) `Lonely Pixel I`
+
+![#533](https://img.shields.io/badge/533-Medium-yellow.svg?style=flat-square) `Lonely Pixel II`
+
+![#534](https://img.shields.io/badge/534-Medium-yellow.svg?style=flat-square) `Game Play Analysis III`
+
+![#536](https://img.shields.io/badge/536-Medium-yellow.svg?style=flat-square) `Construct Binary Tree from String`
+
