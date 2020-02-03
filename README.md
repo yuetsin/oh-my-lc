@@ -2,7 +2,7 @@
 
 ## Progress Diagrams
 
-![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-455%2F1312%20Completed-F89F1B?style=flat-square&logo=LeetCode)
+![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-465%2F1312%20Completed-F89F1B?style=flat-square&logo=LeetCode)
 ![Build Status](https://github.com/yuetsin/oh-my-lc/workflows/build/badge.svg)
 ![Travis (.org)](https://img.shields.io/travis/yuetsin/oh-my-lc?color=3EAAAF&label=travis%20ci&logo=Travis%20CI&style=flat-square)
 
@@ -221,3 +221,17 @@ Some simple code pieces.
 ![#550](https://img.shields.io/badge/550-Medium-yellow.svg?style=flat-square) `Game Play Analysis IV`
 
 ![#555](https://img.shields.io/badge/555-Medium-yellow.svg?style=flat-square) `Split Concatenated Strings`
+
+![#562](https://img.shields.io/badge/562-Medium-yellow.svg?style=flat-square) `Longest Line of Consecutive One in Matrix`
+
+![#568](https://img.shields.io/badge/568-Hard-red.svg?style=flat-square) `Maximum Vacation Days`
+
+![#569](https://img.shields.io/badge/569-Hard-red.svg?style=flat-square) `Median Employee Salary`
+
+![#570](https://img.shields.io/badge/570-Medium-yellow.svg?style=flat-square) `Managers with at Least 5 Direct Reports`
+
+![#571](https://img.shields.io/badge/571-Hard-red.svg?style=flat-square) `Find Median Given Frequency of Numbers`
+
+![#573](https://img.shields.io/badge/573-Medium-yellow.svg?style=flat-square) `Squirrel Simulation`
+
+![#574](https://img.shields.io/badge/574-Medium-yellow.svg?style=flat-square) `Winning Candidate`
