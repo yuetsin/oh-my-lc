@@ -2,7 +2,7 @@
 
 ## Progress Diagrams
 
-![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-445%2F1312%20Completed-F89F1B?style=flat-square&logo=LeetCode)
+![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-455%2F1312%20Completed-F89F1B?style=flat-square&logo=LeetCode)
 ![Build Status](https://github.com/yuetsin/oh-my-lc/workflows/build/badge.svg)
 ![Travis (.org)](https://img.shields.io/travis/yuetsin/oh-my-lc?color=3EAAAF&label=travis%20ci&logo=Travis%20CI&style=flat-square)
 
@@ -210,3 +210,14 @@ Some simple code pieces.
 
 ![#536](https://img.shields.io/badge/536-Medium-yellow.svg?style=flat-square) `Construct Binary Tree from String`
 
+![#544](https://img.shields.io/badge/544-Medium-yellow.svg?style=flat-square) `Output Contest Matches`
+
+![#545](https://img.shields.io/badge/545-Medium-yellow.svg?style=flat-square) `Boundary of Binary Tree`
+
+![#548](https://img.shields.io/badge/548-Medium-yellow.svg?style=flat-square) `Split Array with Equal Sum`
+
+![#549](https://img.shields.io/badge/549-Medium-yellow.svg?style=flat-square) `Binary Tree Longest Consecutive Sequence II`
+
+![#550](https://img.shields.io/badge/550-Medium-yellow.svg?style=flat-square) `Game Play Analysis IV`
+
+![#555](https://img.shields.io/badge/555-Medium-yellow.svg?style=flat-square) `Split Concatenated Strings`
