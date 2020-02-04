@@ -2,7 +2,7 @@
 
 ## Progress Diagrams
 
-![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-465%2F1312%20Completed-F89F1B?style=flat-square&logo=LeetCode)
+![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-475%2F1312%20Completed-F89F1B?style=flat-square&logo=LeetCode)
 ![Build Status](https://github.com/yuetsin/oh-my-lc/workflows/build/badge.svg)
 ![Travis (.org)](https://img.shields.io/travis/yuetsin/oh-my-lc?color=3EAAAF&label=travis%20ci&logo=Travis%20CI&style=flat-square)
 
@@ -235,3 +235,21 @@ Some simple code pieces.
 ![#573](https://img.shields.io/badge/573-Medium-yellow.svg?style=flat-square) `Squirrel Simulation`
 
 ![#574](https://img.shields.io/badge/574-Medium-yellow.svg?style=flat-square) `Winning Candidate`
+
+![#577](https://img.shields.io/badge/577-Easy-green.svg?style=flat-square) `Employee Bonus`
+
+![#578](https://img.shields.io/badge/578-Medium-yellow.svg?style=flat-square) `Get Highest Answer Rate Question`
+
+![#579](https://img.shields.io/badge/579-Hard-red.svg?style=flat-square) `Find Cumulative Salary of an Employee`
+
+![#580](https://img.shields.io/badge/580-Medium-yellow.svg?style=flat-square) `Count Student Number in Departments`
+
+![#582](https://img.shields.io/badge/582-Medium-yellow.svg?style=flat-square) `Kill Process`
+
+![#584](https://img.shields.io/badge/584-Easy-green.svg?style=flat-square) `Find Customer Referee`
+
+![#585](https://img.shields.io/badge/585-Medium-yellow.svg?style=flat-square) `Investments in 2016`
+
+![#586](https://img.shields.io/badge/586-Easy-green.svg?style=flat-square) `Customer Placing the Largest Number of Orders`
+
+![#588](https://img.shields.io/badge/588-Hard-red.svg?style=flat-square) `Design In-Memory File System`
