@@ -1,0 +1,1424 @@
+{\rtf1\ansi\ansicpg950\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;\f1\fnil\fcharset0 HelveticaNeue-Bold;\f2\fswiss\fcharset0 Helvetica;
+\f3\fnil\fcharset0 STIXGeneral-Regular;\f4\froman\fcharset0 Times-Roman;\f5\fswiss\fcharset0 Helvetica-Oblique;
+\f6\fmodern\fcharset0 Courier;\f7\fswiss\fcharset0 Helvetica-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red0\green0\blue0;\red67\green91\blue103;
+\red245\green247\blue249;\red188\green188\blue188;\red135\green135\blue135;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0\c85098;\cssrgb\c0\c0\c0\c65098;\cssrgb\c32941\c43137\c47843;
+\cssrgb\c96863\c97647\c98039;\cssrgb\c78431\c78431\c78431;\cssrgb\c60000\c60000\c60000;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww12600\viewh7800\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs36 \cf2 \expnd0\expndtw0\kerning0
+Approach #3 Using Bit Manipulation [Accepted]\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs28 \cf3 Algorithm
+\f0\b0 \
+Before we discuss the idea behind this approach, we consider another simple idea that will be used in the current approach.\
+Suppose, we need to find the count of binary numbers with
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 n\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 n
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 n
+\f0\i0\fs28  bits such that these numbers don't contain consecutive 1's. In order to do so, we can look at the problem in a recursive fashion. Suppose
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 f\
+[\
+i\
+]\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 f[i]
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 f
+\f2\i0 [
+\f5\i i
+\f2\i0 ]
+\f0\fs28  gives the count of such binary numbers with
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 i\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 i
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 i
+\f0\i0\fs28  bits. In order to determine the value of
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 f\
+[\
+n\
+]\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 f[n]
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 f
+\f2\i0 [
+\f5\i n
+\f2\i0 ]
+\f0\fs28 , which is the requirement, we can consider the cases shown below:\
+\pard\pardeftab720\partightenfactor0
+\cf3 {{\NeXTGraphic 600_Non_Negative_1.png \width11415 \height6270 \noorient \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\pardeftab720\partightenfactor0
+\cf3 \
+From the above figure, we can see that if we know the value of
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 f\
+[\
+n\
+\uc0\u8722 \
+1\
+]\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 f[n-1]
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 f
+\f2\i0 [
+\f5\i n
+\f2\i0 \uc0\u8722 1]
+\f0\fs28  and
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 f\
+[\
+n\
+\uc0\u8722 \
+2\
+]\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 f[n-2]
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 f
+\f2\i0 [
+\f5\i n
+\f2\i0 \uc0\u8722 2]
+\f0\fs28 , in order to generate the required binary numbers with
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 n\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 n
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 n
+\f0\i0\fs28  bits, we can append a 
+\f6\fs26 \cf4 \cb5 0
+\f0\fs28 \cf3 \cb1  to all the binary numbers contained in
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 f\
+[\
+n\
+\uc0\u8722 \
+1\
+]\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 f[n-1]
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 f
+\f2\i0 [
+\f5\i n
+\f2\i0 \uc0\u8722 1]
+\f0\fs28  without creating an invalid number. These numbers give a factor of
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 f\
+[\
+n\
+\uc0\u8722 \
+1\
+]\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 f[n-1]
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 f
+\f2\i0 [
+\f5\i n
+\f2\i0 \uc0\u8722 1]
+\f0\fs28  to be included in
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 f\
+[\
+n\
+]\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 f[n]
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 f
+\f2\i0 [
+\f5\i n
+\f2\i0 ]
+\f0\fs28 . But, we can't append a 
+\f6\fs26 \cf4 \cb5 1
+\f0\fs28 \cf3 \cb1  to all these numbers, since it could lead to the presence of two consecutive ones in the newly generated numbers. Thus, for the currently generated numbers to end with a 
+\f6\fs26 \cf4 \cb5 1
+\f0\fs28 \cf3 \cb1 , we need to ensure that the second last position is always 
+\f6\fs26 \cf4 \cb5 0
+\f0\fs28 \cf3 \cb1 . Thus, we need to fix a 
+\f6\fs26 \cf4 \cb5 01
+\f0\fs28 \cf3 \cb1  at the end of all the numbers contained in
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 f\
+[\
+n\
+\uc0\u8722 \
+2\
+]\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 f[n-2]
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 f
+\f2\i0 [
+\f5\i n
+\f2\i0 \uc0\u8722 2]
+\f0\fs28 . This gives a factor of
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 f\
+[\
+n\
+\uc0\u8722 \
+2\
+]\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 f[n-2]
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 f
+\f2\i0 [
+\f5\i n
+\f2\i0 \uc0\u8722 2]
+\f0\fs28  to be included in
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 f\
+[\
+n\
+]\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 f[n]
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 f
+\f2\i0 [
+\f5\i n
+\f2\i0 ]
+\f0\fs28 . Thus, in total, we get
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 f\
+[\
+n\
+]\
+=\
+f\
+[\
+n\
+\uc0\u8722 \
+1\
+]\
++\
+f\
+[\
+n\
+\uc0\u8722 \
+2\
+]\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 f[n] = f[n-1] + f[n-2]
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 f
+\f2\i0 [
+\f5\i n
+\f2\i0 ]=
+\f5\i f
+\f2\i0 [
+\f5\i n
+\f2\i0 \uc0\u8722 1]+
+\f5\i f
+\f2\i0 [
+\f5\i n
+\f2\i0 \uc0\u8722 2]
+\f0\fs28 .\
+Now, let's look into the current approach. We'll try to understand the idea behind the approach by taking two simple examples. Firstly, we look at the case where the given number doesn't contain any consecutive 1's.Say,
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 n\
+u\
+m\
+=\
+1010100\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 num = \\text\{1010100\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 num
+\f2\i0 =1010100
+\f0\fs28 (7 bit number). Now, we'll see how we can find the numbers lesser than
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 n\
+u\
+m\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 num
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 num
+\f0\i0\fs28  with no two consecutive 1's. We start off with the MSB of
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 n\
+u\
+m\
+s\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 nums
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 nums
+\f0\i0\fs28 . If we fix a
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 0\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\text\{0\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf3 0
+\f0\fs28  at the MSB position, and find out the count of 6 bit numbers(corresponding to the 6 LSBs) with no two consecutive 1's, these 6-bit numbers will lie in the range
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 0\
+000000\
+\uc0\u8722 \
+>\
+0\
+111111\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\textbf\{0\}\\text\{000000\} -> \\textbf\{0\}\\text\{111111\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f7\b \cf3 0
+\f2\b0 000000\uc0\u8722 >
+\f7\b 0
+\f2\b0 111111
+\f0\fs28 . For finding this count we can make use of
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 f\
+[\
+6\
+]\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 f[6]
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 f
+\f2\i0 [6]
+\f0\fs28  which we'll have already calculated based on the discussion above.\
+But, even after doing this, all the numbers in the required range haven't been covered yet. Now, if we try to fix
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 1\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\text\{1\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf3 1
+\f0\fs28  at the MSB, the numbers considered will lie in the range
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 1\
+000000\
+\uc0\u8722 \
+>\
+1\
+111111\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\textbf\{1\}\\text\{000000\} -> \\textbf\{1\}\\text\{111111\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f7\b \cf3 1
+\f2\b0 000000\uc0\u8722 >
+\f7\b 1
+\f2\b0 111111
+\f0\fs28 . As we can see, this covers the numbers in the range
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 1\
+000000\
+\uc0\u8722 \
+>\
+1\
+010100\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\textbf\{1\}\\text\{000000\} -> \\textbf\{1\}\\text\{010100\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f7\b \cf3 1
+\f2\b0 000000\uc0\u8722 >
+\f7\b 1
+\f2\b0 010100
+\f0\fs28 , but it covers the numbers in the range beyond limit as well. Thus, we can't fix
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 1\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\text\{1\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf3 1
+\f0\fs28  at the MSB and consider all the 6-bit numbers at the LSBs.\
+For covering the pending range, we fix
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 1\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\text\{1\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf3 1
+\f0\fs28  at the MSB, and move forward to proceed with the second digit(counting from MSB). Now, since we've already got a
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 0\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\text\{0\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf3 0
+\f0\fs28  at this position, we can't substitute a
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 1\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\text\{1\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf3 1
+\f0\fs28  here, since doing so will lead to generation of numbers exceeding
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 n\
+u\
+m\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 num
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 num
+\f0\i0\fs28 . Thus, the only option left here is to substitute a
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 0\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\text\{0\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf3 0
+\f0\fs28  at the second position. But, if we do so, and consider the 5-bit numbers(at the 5 LSBs) with no two consecutive 1's, these new numbers will fall in the range
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 10\
+00000\
+\uc0\u8722 \
+>\
+10\
+11111\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\textbf\{10\}\\text\{00000\} -> \\textbf\{10\}\\text\{11111\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f7\b \cf3 10
+\f2\b0 00000\uc0\u8722 >
+\f7\b 10
+\f2\b0 11111
+\f0\fs28 . But, again we can observe that considering these numbers leads to exceeding the required range. Thus, we can't consider all the 5-bit numbers for the required count by fixing
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 0\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\text\{0\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf3 0
+\f0\fs28  at the second position.\
+Thus, now, we fix
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 0\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\text\{0\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf3 0
+\f0\fs28  at the second position and proceed further. Again, we encounter a
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 1\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\text\{1\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf3 1
+\f0\fs28  at the third position. Thus, as discussed above, we can fix a
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 0\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\text\{0\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf3 0
+\f0\fs28  at this position and find out the count of 4-bit consecutive numbers with no two consecutive 1's(by varying only the 4 LSB bits). We can obtain this value from
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 f\
+[\
+4\
+]\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 f[4]
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 f
+\f2\i0 [4]
+\f0\fs28 . Thus, now the numbers in the range
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 100\
+0000\
+\uc0\u8722 \
+>\
+100\
+1111\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\textbf\{100\}\\text\{0000\} -> \\textbf\{100\}\\text\{1111\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f7\b \cf3 100
+\f2\b0 0000\uc0\u8722 >
+\f7\b 100
+\f2\b0 1111
+\f0\fs28  have been covered up.\
+Again, as discussed above, now we fix a
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 1\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\text\{1\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf3 1
+\f0\fs28  at the third position, and proceed with the fourth bit. It is a
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 0\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\text\{0\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf3 0
+\f0\fs28 . So, we need to fix it as such as per the above discussion, and proceed with the fifth bit. It is a
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 1\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\text\{1\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf3 1
+\f0\fs28 . So, we fix a
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 0\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\text\{0\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf3 0
+\f0\fs28  here and consider all the numbers by varying the two LSBs for finding the required count of numbers in the range
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 10101\
+00\
+\uc0\u8722 \
+>\
+10101\
+11\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\textbf\{10101\}\\text\{00\} -> \\textbf\{10101\}\\text\{11\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f7\b \cf3 10101
+\f2\b0 00\uc0\u8722 >
+\f7\b 10101
+\f2\b0 11
+\f0\fs28 . Now, we proceed to the sixth bit, find a
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 0\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\text\{0\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf3 0
+\f0\fs28  there. So, we fix
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 0\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\text\{0\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf3 0
+\f0\fs28  at the sixth position and proceed to the seventh bit which is again
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 0\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\text\{0\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf3 0
+\f0\fs28 . So, we fix a
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 0\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\text\{0\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf3 0
+\f0\fs28  at the seventh position as well.\
+Now, we can see, that based on the above procedure, the numbers in the range
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 1\
+000000\
+\uc0\u8722 \
+>\
+1\
+111111\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\textbf\{1\}\\text\{000000\} -> \\textbf\{1\}\\text\{111111\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f7\b \cf3 1
+\f2\b0 000000\uc0\u8722 >
+\f7\b 1
+\f2\b0 111111
+\f0\fs28 ,
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 100\
+0000\
+\uc0\u8722 \
+>\
+100\
+1111\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\textbf\{100\}\\text\{0000\} -> \\textbf\{100\}\\text\{1111\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f7\b \cf3 100
+\f2\b0 0000\uc0\u8722 >
+\f7\b 100
+\f2\b0 1111
+\f0\fs28 ,
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 100\
+0000\
+\uc0\u8722 \
+>\
+100\
+1111\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\textbf\{100\}\\text\{0000\} -> \\textbf\{100\}\\text\{1111\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f7\b \cf3 100
+\f2\b0 0000\uc0\u8722 >
+\f7\b 100
+\f2\b0 1111
+\f0\fs28  have been considered and the counts for these ranges have been obtained as
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 f\
+[\
+6\
+]\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 f[6]
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 f
+\f2\i0 [6]
+\f0\fs28 ,
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 f\
+[\
+4\
+]\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 f[4]
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 f
+\f2\i0 [4]
+\f0\fs28  and
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 f\
+[\
+2\
+]\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 f[2]
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 f
+\f2\i0 [2]
+\f0\fs28  respectively. Now, only
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 1010100\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\text\{1010100\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf3 1010100
+\f0\fs28  is pending to be considered in the required count. Since, it doesn't contain any consecutive 1's, we add a 1 to the total count obtained till now to consider this number. Thus, the result returned is
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 f\
+[\
+6\
+]\
++\
+f\
+[\
+4\
+]\
++\
+f\
+[\
+2\
+]\
++\
+1\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 f[6] + f[4] + f[2] + 1
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 f
+\f2\i0 [6]+
+\f5\i f
+\f2\i0 [4]+
+\f5\i f
+\f2\i0 [2]+1
+\f0\fs28 .\
+\pard\pardeftab720\partightenfactor0
+\cf3 {{\NeXTGraphic æœªçŸ¥.png \width9640 \height5420 \noorient \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\pardeftab720\partightenfactor0
+\cf3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs70 \cf6 \
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf7 \
+\pard\pardeftab720\partightenfactor0
+
+\fs44 \cf7 \
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf7 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf6 \cb8 1 / 12\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf3 \
+\
+Now, we look at the case, where
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 n\
+u\
+m\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 num
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 num
+\f0\i0\fs28  contains some consecutive 1's. The idea will be the same as the last example, with the only exception taken when the two consecutive 1's are encountered. Let's say,
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 n\
+u\
+m\
+=\
+1011010\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 num = \\text\{1011010\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 num
+\f2\i0 =1011010
+\f0\fs28 (7 bit number). Now, as per the last discussion, we start with the MSB. We find a
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 1\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\text\{1\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf3 1
+\f0\fs28  at this position. Thus, we initially fix a
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 0\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\text\{0\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf3 0
+\f0\fs28  at this position to consider the numbers in the range
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 0\
+000000\
+\uc0\u8722 \
+>\
+0\
+111111\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\textbf\{0\}\\text\{000000\} -> \\textbf\{0\}\\text\{111111\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f7\b \cf3 0
+\f2\b0 000000\uc0\u8722 >
+\f7\b 0
+\f2\b0 111111
+\f0\fs28 , by varying the 6 LSB bits only. The count of the required numbers in this range is again given by
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 f\
+[\
+6\
+]\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 f[6]
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 f
+\f2\i0 [6]
+\f0\fs28 .\
+Now, we fix a
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 1\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\text\{1\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf3 1
+\f0\fs28  at the MSB and move on to the second bit. It is a
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 0\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\text\{0\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf3 0
+\f0\fs28 , so we have no choice but to fix
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 0\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\text\{0\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf3 0
+\f0\fs28  at this position and to proceed with the third bit. It is a
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 1\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\text\{1\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf3 1
+\f0\fs28 , so we fix a
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 0\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\text\{0\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf3 0
+\f0\fs28  here, considering the numbers in the range
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 100\
+0000\
+\uc0\u8722 \
+>\
+100\
+1111\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\textbf\{100\}\\text\{0000\} -> \\textbf\{100\}\\text\{1111\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f7\b \cf3 100
+\f2\b0 0000\uc0\u8722 >
+\f7\b 100
+\f2\b0 1111
+\f0\fs28 . This accounts for a factor of
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 f\
+[\
+4\
+]\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 f[4]
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 f
+\f2\i0 [4]
+\f0\fs28 . Now, we fix a
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 1\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\text\{1\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf3 1
+\f0\fs28  at the third positon, and proceed with the fourth bit. It is a
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 1\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\text\{1\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf3 1
+\f0\fs28 (consecutive to the previous
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 1\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\text\{1\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf3 1
+\f0\fs28 ). Now, initially we fix a
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 0\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\text\{0\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf3 0
+\f0\fs28  at the fourth position, considering the numbers in the range
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 1010\
+000\
+\uc0\u8722 \
+>\
+1010\
+111\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\textbf\{1010\}\\text\{000\} -> \\textbf\{1010\}\\text\{111\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f7\b \cf3 1010
+\f2\b0 000\uc0\u8722 >
+\f7\b 1010
+\f2\b0 111
+\f0\fs28 . This adds a factor of
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 f\
+[\
+3\
+]\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 f[3]
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 f
+\f2\i0 [3]
+\f0\fs28  to the required count.\
+Now, we can see that till now the numbers in the range
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 0\
+000000\
+\uc0\u8722 \
+>\
+0\
+111111\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\textbf\{0\}\\text\{000000\} -> \\textbf\{0\}\\text\{111111\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f7\b \cf3 0
+\f2\b0 000000\uc0\u8722 >
+\f7\b 0
+\f2\b0 111111
+\f0\fs28 ,
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 100\
+0000\
+\uc0\u8722 \
+>\
+100\
+1111\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\textbf\{100\}\\text\{0000\} -> \\textbf\{100\}\\text\{1111\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f7\b \cf3 100
+\f2\b0 0000\uc0\u8722 >
+\f7\b 100
+\f2\b0 1111
+\f0\fs28 ,
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 1010\
+000\
+\uc0\u8722 \
+>\
+1010\
+111\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\textbf\{1010\}\\text\{000\} -> \\textbf\{1010\}\\text\{111\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f7\b \cf3 1010
+\f2\b0 000\uc0\u8722 >
+\f7\b 1010
+\f2\b0 111
+\f0\fs28  have been considered. But, if we try to consider any number larger than
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 1010111\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 \\text\{1010111\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf3 1010111
+\f0\fs28 , it leads to the presence of two consecutive 1's in the new number at the third and fourth position. Thus, all the valid numbers upto
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 n\
+u\
+m\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 num
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 num
+\f0\i0\fs28  have been considered with this, giving a resultant count of
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 f\
+[\
+6\
+]\
++\
+f\
+[\
+4\
+]\
++\
+f\
+[\
+3\
+]\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 f[6] + f[4] + f[3]
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 f
+\f2\i0 [6]+
+\f5\i f
+\f2\i0 [4]+
+\f5\i f
+\f2\i0 [3]
+\f0\fs28 .\
+\pard\pardeftab720\partightenfactor0
+\cf3 {{\NeXTGraphic 1__#$!@%!#__æœªçŸ¥.png \width9640 \height5420 \noorient \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\pardeftab720\partightenfactor0
+\cf3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs70 \cf6 \
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf7 \
+\pard\pardeftab720\partightenfactor0
+
+\fs44 \cf7 \
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf7 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf6 \cb8 1 / 8\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf3 \
+\
+Thus, summarizing the above discussion, we can say that we start scanning the given number
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 n\
+u\
+m\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 num
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 num
+\f0\i0\fs28  from its MSB. For every 1 encountered at the
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 i\
+\pard\pardeftab720\partightenfactor0
+
+\fs25\fsmilli12700 \cf3 t\
+h\
+\pard\pardeftab720\partightenfactor0
+
+\f4\fs33\fsmilli16940 \cf3 i^\{th\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 i
+\f2\i0 \
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth241\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f5\i\fs23\fsmilli11858 \cf3 th
+\f2\i0\fs33\fsmilli16940 \cell \lastrow\row
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf3 bit position(counting from 0 from LSB), we add a factor of
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 f\
+[\
+i\
+]\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 f[i]
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 f
+\f2\i0 [
+\f5\i i
+\f2\i0 ]
+\f0\fs28  to the resultant count. For every 0 encountered, we don't add any factor. We also keep a track of the last bit checked. If we happen to find two consecutive 1's at any time, we add the factors for the positions of both the 1's and stop the traversal immediately. If we don't find any two consecutive 1's, we proceed till reaching the LSB and add an extra 1 to account for the given number
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 n\
+u\
+m\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 num
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 num
+\f0\i0\fs28  as well, since the procedure discussed above considers numbers upto
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 n\
+u\
+m\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 num
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 num
+\f0\i0\fs28  without including itself.}
