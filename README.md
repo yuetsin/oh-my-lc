@@ -2,7 +2,7 @@
 
 ## Progress Diagrams
 
-![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-486%2F1312%20Completed-F89F1B?style=flat-square&logo=LeetCode)
+![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-496%2F1312%20Completed-F89F1B?style=flat-square&logo=LeetCode)
 ![Build Status](https://github.com/yuetsin/oh-my-lc/workflows/build/badge.svg)
 ![Travis (.org)](https://img.shields.io/travis/yuetsin/oh-my-lc?color=3EAAAF&label=travis%20ci&logo=Travis%20CI&style=flat-square)
 
@@ -277,3 +277,13 @@ Some simple code pieces.
 ![#615](https://img.shields.io/badge/615-Hard-red.svg?style=flat-square) `Average Salary: Departments vs. Company`
 
 ![#616](https://img.shields.io/badge/616-Medium-yellow.svg?style=flat-square) `Add Bold Tag in String`
+
+![#618](https://img.shields.io/badge/618-Hard-red.svg?style=flat-square) `Students Report By Geography`
+
+![#619](https://img.shields.io/badge/619-Easy-green.svg?style=flat-square) `Biggest Single Number`
+
+![#624](https://img.shields.io/badge/624-Easy-green.svg?style=flat-square) `Maximum Distance in Arrays`
+
+![#625](https://img.shields.io/badge/625-Medium-yellow.svg?style=flat-square) `Minimum Factorization`
+
+![#631](https://img.shields.io/badge/631-Hard-red.svg?style=flat-square) `Design Excel Sum Formula`
