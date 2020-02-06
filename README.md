@@ -2,7 +2,7 @@
 
 ## Progress Diagrams
 
-![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-475%2F1312%20Completed-F89F1B?style=flat-square&logo=LeetCode)
+![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-486%2F1312%20Completed-F89F1B?style=flat-square&logo=LeetCode)
 ![Build Status](https://github.com/yuetsin/oh-my-lc/workflows/build/badge.svg)
 ![Travis (.org)](https://img.shields.io/travis/yuetsin/oh-my-lc?color=3EAAAF&label=travis%20ci&logo=Travis%20CI&style=flat-square)
 
@@ -253,3 +253,27 @@ Some simple code pieces.
 ![#586](https://img.shields.io/badge/586-Easy-green.svg?style=flat-square) `Customer Placing the Largest Number of Orders`
 
 ![#588](https://img.shields.io/badge/588-Hard-red.svg?style=flat-square) `Design In-Memory File System`
+
+![#597](https://img.shields.io/badge/597-Easy-green.svg?style=flat-square) `Friend Requests I: Overall Acceptance Rate`
+
+![#602](https://img.shields.io/badge/602-Medium-yellow.svg?style=flat-square) `Friend Requests II: Who Has the Most Friends`
+
+![#603](https://img.shields.io/badge/603-Easy-green.svg?style=flat-square) `Consecutive Available Seats`
+
+![#604](https://img.shields.io/badge/604-Easy-green.svg?style=flat-square) `Design Compressed String Iterator`
+
+![#607](https://img.shields.io/badge/607-Easy-green.svg?style=flat-square) `Sales Person`
+
+![#608](https://img.shields.io/badge/608-Medium-yellow.svg?style=flat-square) `Tree Node`
+
+![#610](https://img.shields.io/badge/610-Easy-green.svg?style=flat-square) `Triangle Judgement`
+
+![#612](https://img.shields.io/badge/612-Medium-yellow.svg?style=flat-square) `Shortest Distance in a Plane`
+
+![#613](https://img.shields.io/badge/613-Easy-green.svg?style=flat-square) `Shortest Distance in a Line`
+
+![#614](https://img.shields.io/badge/614-Medium-yellow.svg?style=flat-square) `Second Degree Follower`
+
+![#615](https://img.shields.io/badge/615-Hard-red.svg?style=flat-square) `Average Salary: Departments vs. Company`
+
+![#616](https://img.shields.io/badge/616-Medium-yellow.svg?style=flat-square) `Add Bold Tag in String`
