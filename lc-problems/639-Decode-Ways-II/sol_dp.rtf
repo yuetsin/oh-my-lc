@@ -1,0 +1,187 @@
+{\rtf1\ansi\ansicpg950\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;\f1\fnil\fcharset0 HelveticaNeue-Bold;\f2\fswiss\fcharset0 Helvetica;
+\f3\fnil\fcharset0 STIXGeneral-Regular;\f4\froman\fcharset0 Times-Roman;\f5\fswiss\fcharset0 Helvetica-Oblique;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0\c85098;\cssrgb\c0\c0\c0\c65098;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww12600\viewh7800\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs36 \cf2 \expnd0\expndtw0\kerning0
+Approach 2: Dynamic Programming\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs28 \cf3 Algorithm
+\f0\b0 \
+From the solutions discussed above, we can observe that the number of decodings possible upto any index,
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 i\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 i
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 i
+\f0\i0\fs28 , is dependent only on the characters upto the index
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 i\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 i
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 i
+\f0\i0\fs28  and not on any of the characters following it. This leads us to the idea that this problem can be solved by making use of Dynamic Programming.\
+We can also easily observe from the recursive solution that, the number of decodings possible upto the index
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 i\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 i
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 i
+\f0\i0\fs28  can be determined easily if we know the number of decodings possible upto the index
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 i\
+\uc0\u8722 \
+1\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 i-1
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 i
+\f2\i0 \uc0\u8722 1
+\f0\fs28  and
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 i\
+\uc0\u8722 \
+2\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 i-2
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 i
+\f2\i0 \uc0\u8722 2
+\f0\fs28 . Thus, we fill in the
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 d\
+p\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 dp
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 dp
+\f0\i0\fs28  array in a forward manner.
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 d\
+p\
+[\
+i\
+]\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 dp[i]
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 dp
+\f2\i0 [
+\f5\i i
+\f2\i0 ]
+\f0\fs28  is used to store the number of decodings possible by considering the characters in the given string
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 s\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 s
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 s
+\f0\i0\fs28  upto the
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 (\
+i\
+\uc0\u8722 \
+1\
+)\
+\pard\pardeftab720\partightenfactor0
+
+\fs25\fsmilli12700 \cf3 t\
+h\
+\pard\pardeftab720\partightenfactor0
+
+\f4\fs33\fsmilli16940 \cf3 (i-1)^\{th\}
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf3 (
+\f5\i i
+\f2\i0 \uc0\u8722 1)\
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth241\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f5\i\fs23\fsmilli11858 \cf3 th
+\f2\i0\fs33\fsmilli16940 \cell \lastrow\row
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf3 index only(including it).\
+The equations for filling this
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 d\
+p\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 dp
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 dp
+\f0\i0\fs28  at any step again depend on the current character and the just preceding character. These equations are similar to the ones used in the recursive solution.\
+The following animation illustrates the process of filling the
+\f2\fs33\fsmilli16940 \
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf3 d\
+p\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf3 dp
+\f3 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\i \cf3 dp
+\f0\i0\fs28  for a simple example.}
