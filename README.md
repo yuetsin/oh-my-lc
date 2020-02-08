@@ -2,7 +2,7 @@
 
 ## Progress Diagrams
 
-![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-496%2F1312%20Completed-F89F1B?style=flat-square&logo=LeetCode)
+![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-506%2F1312%20Completed-F89F1B?style=flat-square&logo=LeetCode)
 ![Build Status](https://github.com/yuetsin/oh-my-lc/workflows/build/badge.svg)
 ![Travis (.org)](https://img.shields.io/travis/yuetsin/oh-my-lc?color=3EAAAF&label=travis%20ci&logo=Travis%20CI&style=flat-square)
 
@@ -287,3 +287,11 @@ Some simple code pieces.
 ![#625](https://img.shields.io/badge/625-Medium-yellow.svg?style=flat-square) `Minimum Factorization`
 
 ![#631](https://img.shields.io/badge/631-Hard-red.svg?style=flat-square) `Design Excel Sum Formula`
+
+![#634](https://img.shields.io/badge/634-Medium-yellow.svg?style=flat-square) `Find the Derangement of An Array`
+
+![#635](https://img.shields.io/badge/635-Medium-yellow.svg?style=flat-square) `Design Log Storage System`
+
+![#642](https://img.shields.io/badge/642-Hard-red.svg?style=flat-square) `Design Search Autocomplete System`
+
+![#644](https://img.shields.io/badge/644-Hard-red.svg?style=flat-square) `Maximum Average Subarray II`
