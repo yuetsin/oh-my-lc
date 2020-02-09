@@ -1,6 +1,6 @@
 # oh-my-lc
 
-## Progress Diagrams
+## Progress
 
 ![Build Status](https://github.com/yuetsin/oh-my-lc/workflows/build/badge.svg)
 ![Travis (.org)](https://img.shields.io/travis/yuetsin/oh-my-lc?color=3EAAAF&label=travis%20ci&logo=Travis%20CI&style=flat-square)
@@ -298,3 +298,5 @@ Some simple code pieces.
 ![#651](https://img.shields.io/badge/651-Medium-yellow.svg?style=flat-square) `4 Keys Keyboard`
 
 ![#656](https://img.shields.io/badge/656-Hard-red.svg?style=flat-square) `Coin Path`
+
+![#660](https://img.shields.io/badge/660-Hard-red.svg?style=flat-square) `Remove 9`
