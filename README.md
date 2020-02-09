@@ -2,7 +2,7 @@
 
 ## Progress Diagrams
 
-![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-506%2F1312%20Completed-F89F1B?style=flat-square&logo=LeetCode)
+![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-516%2F1312%20Completed-F89F1B?style=flat-square&logo=LeetCode)
 ![Build Status](https://github.com/yuetsin/oh-my-lc/workflows/build/badge.svg)
 ![Travis (.org)](https://img.shields.io/travis/yuetsin/oh-my-lc?color=3EAAAF&label=travis%20ci&logo=Travis%20CI&style=flat-square)
 
@@ -295,3 +295,7 @@ Some simple code pieces.
 ![#642](https://img.shields.io/badge/642-Hard-red.svg?style=flat-square) `Design Search Autocomplete System`
 
 ![#644](https://img.shields.io/badge/644-Hard-red.svg?style=flat-square) `Maximum Average Subarray II`
+
+![#651](https://img.shields.io/badge/651-Medium-yellow.svg?style=flat-square) `4 Keys Keyboard`
+
+![#656](https://img.shields.io/badge/656-Hard-red.svg?style=flat-square) `Coin Path`
