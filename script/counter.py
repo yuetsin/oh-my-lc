@@ -34,7 +34,7 @@ svg_link = "https://img.shields.io/badge/Solving%%20Progress-%d%%2F%d%%20Complet
 badge_str = "\n![LeetCode Progress](%s)" % svg_link
 for line in old_file:
     w_str += line
-    if line == "## Progress Diagrams\n":
+    if line == "## Progress\n":
         w_str += badge_str
 
 with open("README.md", 'w') as new_file:
