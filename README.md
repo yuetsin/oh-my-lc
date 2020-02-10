@@ -1,8 +1,7 @@
 # oh-my-lc
 
-## Progress Diagrams
+## Progress
 
-![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-516%2F1312%20Completed-F89F1B?style=flat-square&logo=LeetCode)
 ![Build Status](https://github.com/yuetsin/oh-my-lc/workflows/build/badge.svg)
 ![Travis (.org)](https://img.shields.io/travis/yuetsin/oh-my-lc?color=3EAAAF&label=travis%20ci&logo=Travis%20CI&style=flat-square)
 
@@ -299,3 +298,9 @@ Some simple code pieces.
 ![#651](https://img.shields.io/badge/651-Medium-yellow.svg?style=flat-square) `4 Keys Keyboard`
 
 ![#656](https://img.shields.io/badge/656-Hard-red.svg?style=flat-square) `Coin Path`
+
+![#660](https://img.shields.io/badge/660-Hard-red.svg?style=flat-square) `Remove 9`
+
+![#663](https://img.shields.io/badge/663-Medium-yellow.svg?style=flat-square) `Equal Tree Partition`
+
+![#666](https://img.shields.io/badge/666-Medium-yellow.svg?style=flat-square) `Path Sum IV`
