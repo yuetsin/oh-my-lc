@@ -3,7 +3,7 @@
 import os
 import subprocess
 
-LEETCODE_PROBLEMS_COUNT = 1312
+LEETCODE_PROBLEMS_COUNT = 1349
 
 path = os.getcwd() + "/lc-problems/"
 
