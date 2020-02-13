@@ -2,7 +2,7 @@
 
 ## Progress
 
-![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-556%2F1312%20Completed-F89F1B?style=flat-square&logo=LeetCode)
+![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-566%2F1349%20Completed-F89F1B?style=flat-square&logo=LeetCode)
 ![Build Status](https://github.com/yuetsin/oh-my-lc/workflows/build/badge.svg)
 ![Travis (.org)](https://img.shields.io/travis/yuetsin/oh-my-lc?color=3EAAAF&label=travis%20ci&logo=Travis%20CI&style=flat-square)
 
@@ -313,3 +313,9 @@ Some simple code pieces.
 ![#694](https://img.shields.io/badge/694-Medium-yellow.svg?style=flat-square) `Number of Distinct Islands`
 
 ![#702](https://img.shields.io/badge/702-Medium-yellow.svg?style=flat-square) `Search in a Sorted Array of Unknown Size`
+
+![#708](https://img.shields.io/badge/708-Medium-yellow.svg?style=flat-square) `Insert into a Sorted Circular Linked List`
+
+![#711](https://img.shields.io/badge/711-Hard-red.svg?style=flat-square) `Number of Distinct Islands II`
+
+![#716](https://img.shields.io/badge/716-Easy-green.svg?style=flat-square) `Max Stack`
