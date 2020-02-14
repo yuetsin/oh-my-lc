@@ -2,7 +2,7 @@
 
 ## Progress
 
-![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-566%2F1349%20Completed-F89F1B?style=flat-square&logo=LeetCode)
+![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-576%2F1349%20Completed-F89F1B?style=flat-square&logo=LeetCode)
 ![Build Status](https://github.com/yuetsin/oh-my-lc/workflows/build/badge.svg)
 ![Travis (.org)](https://img.shields.io/travis/yuetsin/oh-my-lc?color=3EAAAF&label=travis%20ci&logo=Travis%20CI&style=flat-square)
 
@@ -319,3 +319,7 @@ Some simple code pieces.
 ![#711](https://img.shields.io/badge/711-Hard-red.svg?style=flat-square) `Number of Distinct Islands II`
 
 ![#716](https://img.shields.io/badge/716-Easy-green.svg?style=flat-square) `Max Stack`
+
+![#723](https://img.shields.io/badge/723-Medium-yellow.svg?style=flat-square) `Candy Crush`
+
+![#727](https://img.shields.io/badge/727-Hard-red.svg?style=flat-square) `Minimum Window Subsequence`
