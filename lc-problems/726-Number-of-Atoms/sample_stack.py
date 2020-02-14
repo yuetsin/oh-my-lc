@@ -2,6 +2,9 @@
 #
 # written by @awice
 
+import re
+import collections
+
 
 class Solution:
     def countOfAtoms(self, formula: str) -> str:
