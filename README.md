@@ -2,7 +2,7 @@
 
 ## Progress
 
-![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-587%2F1349%20Completed-F89F1B?style=flat-square&logo=LeetCode)
+![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-597%2F1349%20Completed-F89F1B?style=flat-square&logo=LeetCode)
 ![Build Status](https://github.com/yuetsin/oh-my-lc/workflows/build/badge.svg)
 ![Travis (.org)](https://img.shields.io/travis/yuetsin/oh-my-lc?color=3EAAAF&label=travis%20ci&logo=Travis%20CI&style=flat-square)
 
@@ -329,3 +329,9 @@ Some simple code pieces.
 ![#737](https://img.shields.io/badge/737-Medium-yellow.svg?style=flat-square) `Sentence Similarity II`
 
 ![#742](https://img.shields.io/badge/742-Medium-yellow.svg?style=flat-square) `Closest Leaf in a Binary Tree`
+
+![#750](https://img.shields.io/badge/750-Medium-yellow.svg?style=flat-square) `Number Of Corner Rectangles`
+
+![#751](https://img.shields.io/badge/751-Easy-green.svg?style=flat-square) `IP to CIDR`
+
+![#755](https://img.shields.io/badge/755-Medium-yellow.svg?style=flat-square) `Pour Water`
