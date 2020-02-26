@@ -2,7 +2,7 @@
 
 ## Progress
 
-![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-597%2F1349%20Completed-F89F1B?style=flat-square&logo=LeetCode)
+![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-600%2F1349%20Completed-F89F1B?style=flat-square&logo=LeetCode)
 ![Build Status](https://github.com/yuetsin/oh-my-lc/workflows/build/badge.svg)
 ![Travis (.org)](https://img.shields.io/travis/yuetsin/oh-my-lc?color=3EAAAF&label=travis%20ci&logo=Travis%20CI&style=flat-square)
 
@@ -335,3 +335,9 @@ Some simple code pieces.
 ![#751](https://img.shields.io/badge/751-Easy-green.svg?style=flat-square) `IP to CIDR`
 
 ![#755](https://img.shields.io/badge/755-Medium-yellow.svg?style=flat-square) `Pour Water`
+
+![#758](https://img.shields.io/badge/758-Easy-green.svg?style=flat-square) `Bold Words in String`
+
+![#759](https://img.shields.io/badge/759-Hard-red.svg?style=flat-square) `Employee Free Time`
+
+![#760](https://img.shields.io/badge/760-Easy-green.svg?style=flat-square) `Find Anagram Mappings`
