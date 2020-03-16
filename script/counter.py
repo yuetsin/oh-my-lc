@@ -49,7 +49,7 @@ git add .
 
 git config --global user.name "LeetCode Bot"
 
-git commit -am "[bot] completed progress (%d/%d)"
+git commit -am "[bot] completion progress (%d/%d)"
 
 git config remote.origin.url https://%s:%s@github.com/%s/oh-my-lc.git
 
