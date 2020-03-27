@@ -2,7 +2,7 @@
 
 ## Progress
 
-![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-607%2F1349%20Completed-F89F1B?style=flat-square&logo=LeetCode)
+![LeetCode Progress](https://img.shields.io/badge/Solving%20Progress-611%2F1349%20Completed-F89F1B?style=flat-square&logo=LeetCode)
 ![Build Status](https://github.com/yuetsin/oh-my-lc/workflows/build/badge.svg)
 ![Travis (.org)](https://img.shields.io/travis/yuetsin/oh-my-lc?color=3EAAAF&label=travis%20ci&logo=Travis%20CI&style=flat-square)
 
@@ -341,3 +341,9 @@ Some simple code pieces.
 ![#759](https://img.shields.io/badge/759-Hard-red.svg?style=flat-square) `Employee Free Time`
 
 ![#760](https://img.shields.io/badge/760-Easy-green.svg?style=flat-square) `Find Anagram Mappings`
+
+![#772](https://img.shields.io/badge/772-Hard-red.svg?style=flat-square) `Basic Calculator III`
+
+![#774](https://img.shields.io/badge/774-Hard-red.svg?style=flat-square) `Minimize Max Distance to Gas Station`
+
+![#776](https://img.shields.io/badge/776-Medium-yellow.svg?style=flat-square) `Split BST`
