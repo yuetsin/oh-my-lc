@@ -1,4 +1,4 @@
-# Lecture 3
+# Union, and Find
 
 > 并查集（Union − Find Set）。
 
